@@ -5,14 +5,14 @@ int main()
     
     int no,i,f=0,n=3;
     scanf("%d",&no);
-    
-    printf("2 ");
-    
+    if(no>=2){
+       printf("2 "); 
+    }
+
     while(n<=no){
         
-        for(i=2;i<=n/2;i++){
+        for(i=3;i<=n/2;i++){
             if(n%i==0){
-                //printf("%d ",n);
                 f=1;
                 break;
             }
@@ -21,7 +21,7 @@ int main()
             printf("%d ",n);
         }
         f=0;
-        n++;
+        n+=2;
     }
 
     return 0;
